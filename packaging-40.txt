@@ -1,0 +1,3 @@
+$ devpi login root
+...
+$ devpi index --create pypi

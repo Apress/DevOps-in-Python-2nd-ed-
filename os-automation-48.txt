@@ -1,0 +1,12 @@
+with measure_time() as click:
+     client.connect(("localhost", 6379))
+     click()
+     client.sendall(to_command(["SET", "test-key", "test-value"]))
+     click()
+     print(reader.readline().strip())
+     click()
+     client.sendall(to_command(["GET", "test-key"]))
+     click()
+     print(reader.readline().strip())
+     click()
+     print(reader.readline().strip())

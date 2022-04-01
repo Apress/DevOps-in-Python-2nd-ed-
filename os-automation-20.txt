@@ -1,0 +1,7 @@
+>>> here = pathlib.Path.cwd()
+>>> for child in here.iterdir():
+...     print(repr(child))
+...
+PosixPath('/deep/directory/hierarchy/funsize/onemorefile')
+PosixPath('/deep/directory/hierarchy/funsize/afile')
+PosixPath('/deep/directory/hierarchy/funsize/anotherfile')

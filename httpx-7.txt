@@ -1,0 +1,3 @@
+client = httpx.Client(
+    cert=("/path/to/client.cert", "/path/to/client.key")
+)

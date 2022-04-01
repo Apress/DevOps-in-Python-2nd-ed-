@@ -1,0 +1,9 @@
+>>> here = pathlib.Path.cwd()
+>>> csv = here / "table.csv"
+>>> csv.exists()
+True
+>>> for json in here.glob("*.json"):
+...     print(repr(json))
+...
+PosixPath('/deep/directory/hierarchy/mixed/stuff.json')
+PosixPath('/deep/directory/hierarchy/mixed/more-stuff.json')

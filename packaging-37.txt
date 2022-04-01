@@ -1,0 +1,10 @@
+(devpi)$ pip install devpi-client twine
+(devpi)$ devpi use http://localhost:3141
+(devpi)$ devpi user -c testuser password=123
+(devpi)$ devpi login testuser --password=123
+(devpi)$ devpi index -c dev bases=root/pypi
+(devpi)$ devpi use testuser/dev
+(devpi)$ pip download boltons==21.0.0
+(devpi)$ twine upload --repository-url http://localhost:3141/testuser/dev \
+               -u testuser -p 123 boltons-21.0.0-py2.py3-none-any.whl
+(devpi)$ pip install -i http://localhost:3141/testuser/dev my-package

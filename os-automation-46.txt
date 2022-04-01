@@ -1,0 +1,11 @@
+0.201
+0.084
+STORED
+0.345
+0.025
+VALUE test-key 0 10
+0.211
+test-value
+0.013
+END
+total time 0.887

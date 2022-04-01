@@ -1,0 +1,11 @@
+with open("example.png", "rb") as fpin:
+    fpin.read(8)
+    while True:
+        chunk_header = fpin.read(8)
+        if len(chunk_header) < 8:
+            break
+        chunk_length, *chunk_type = struct.unpack(">I4c", chunk_header)
+        chunk_type = b"".join(chunk_type)
+        data = fpin.read(chunk_length)
+        crc = fpin.read(4)
+        print("chunk", chunk_length, chunk_type)

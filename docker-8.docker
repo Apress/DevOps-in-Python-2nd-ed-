@@ -1,0 +1,3 @@
+COPY setup.cfg ... /app/sources/
+RUN cd /app/sources/ && python -m build
+RUN /app/runtime/bin/pip install --no-dependencies /app/sources/dist/*.whl

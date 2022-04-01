@@ -1,0 +1,6 @@
+COPY requirements.txt setup.cfg ... /app/sources/
+RUN python -m venv /app/runtime/
+RUN /app/runtime/bin/pip install -r /app/sources/requirements.txt
+RUN pip install build
+RUN cd /app/sources/ && python -m build
+RUN /app/runtime/bin/pip install --no-dependencies /app/sources/dist/*.whl

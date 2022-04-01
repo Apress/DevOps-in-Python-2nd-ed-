@@ -1,0 +1,3 @@
+$ python -m venv ~/.venvs/tox
+$ ~/.venvx/tox/bin/python -m pip install tox
+$ alias tox=~/.venvs/tox/bin/tox

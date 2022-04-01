@@ -1,0 +1,3 @@
+(devpi)$ pip install devpi-server
+(devpi)$ devpi-init
+(devpi)$ devpi-server

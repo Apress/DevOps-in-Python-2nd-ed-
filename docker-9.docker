@@ -1,0 +1,6 @@
+COPY setup.cfg pyproject.toml /app/sources/
+RUN cd /app/sources/ && (python -m build --no-isolation || true)
+RUN rm -rf /app/soures/dist
+COPY setup.cfg ... /app/sources/
+RUN cd /app/sources/ && python -m build --no-isolation
+RUN /app/runtime/bin/pip install --no-dependencies /app/sources/dist/*.whl

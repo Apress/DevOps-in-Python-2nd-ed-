@@ -1,0 +1,1 @@
+$ devpi-init --no-root-pypi

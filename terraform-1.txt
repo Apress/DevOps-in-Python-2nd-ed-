@@ -1,0 +1,7 @@
+{
+    "variable": {
+        "person": {
+            "default": "Person"
+        }
+    }
+}

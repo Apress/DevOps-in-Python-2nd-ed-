@@ -1,0 +1,5 @@
+$ wc -l requirements.txt
+33 requirements.txt
+$ egrep 'pyramid|gunicorn' requirements.txt |grep -v '#'
+gunicorn==20.1.0
+pyramid==2.0

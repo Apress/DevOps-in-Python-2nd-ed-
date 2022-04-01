@@ -1,0 +1,16 @@
+FROM python:bullseye as venv-builder
+
+RUN pip install build
+RUN mkdir /src/
+WORKDIR /src
+RUN python -m venv /opt/pyr-venv/
+COPY requirements.txt /src/
+RUN /opt/pyr-venv/bin/pip install -r /src/requirements.txt
+COPY setup.cfg pyproject.toml /src/
+# copy source code
+RUN python -m build
+RUN /opt/pyr-venv/bin/pip install --no-dependencies dist/*.whl
+RUN /opt/pyr-venv/bin/pip check
+
+FROM python:slim-bullseye as runtime
+COPY --from=venv-builder /opt/pyr-venv /opt/pyr-venv

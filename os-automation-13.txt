@@ -1,0 +1,6 @@
+>>> afile = neighbor / "afile"
+>>> afile.is_file()
+True
+>>> stats = afile.stat()
+>>> stats.st_size
+6

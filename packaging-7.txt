@@ -1,0 +1,8 @@
+[project]
+name = "awesome_package"
+version = "0.0.3"
+description = "A pretty awesome package"
+readme = "README.rst"
+authors = [{name = "My Name",
+            email = "me@example.com"}]
+dependencies = ["httpx"]

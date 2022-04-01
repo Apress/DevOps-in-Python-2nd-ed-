@@ -1,0 +1,3 @@
+client = socket.socket()
+client.settimeout(1)
+reader = client.makefile()

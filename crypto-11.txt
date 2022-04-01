@@ -1,0 +1,2 @@
+>>> with open("target.pubkey", "wb") as fpout:
+...     fpout.write(encoded)

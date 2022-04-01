@@ -1,0 +1,7 @@
+>>> client = socket.socket()
+>>> client.settimeout(1)
+>>> client.connect(("localhost", 8080))
+>>> client.recv(1024)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+socket.timeout: timed out

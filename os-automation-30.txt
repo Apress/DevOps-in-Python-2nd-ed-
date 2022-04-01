@@ -1,0 +1,4 @@
+chunk 13 b'IHDR'
+chunk 93 b'PLTE'
+chunk 2173 b'IDAT'
+chunk 0 b'IEND'

@@ -1,0 +1,4 @@
+>>> local = here.absolute()
+>>> neighbor = local.parent  / "newdir"
+>>> neighbor
+PosixPath('/deep/directory/hierarchy/newdir')

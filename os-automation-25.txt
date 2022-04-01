@@ -1,0 +1,7 @@
+with open("example.png", "rb") as fpin:
+    fpin.read(8)
+    chunk_length, *chunk_type = struct.unpack(">I4c", fpin.read(8))
+    chunk_type = b"".join(chunk_type)
+    data = fpin.read(chunk_length)
+    crc = fpin.read(4)
+    print("chunk", chunk_length, chunk_type)

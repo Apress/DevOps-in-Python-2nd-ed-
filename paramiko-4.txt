@@ -1,0 +1,3 @@
+>>> import stat
+>>> oct(stat.S_IWRITE | stat.S_IREAD)
+'0o600'

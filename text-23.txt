@@ -1,0 +1,6 @@
+>>> encoded_string='{"b":1,"a":2}'
+>>> print(json.dumps(json.loads(encoded_string), indent=4))
+{
+    "b": 1,
+    "a": 2
+}

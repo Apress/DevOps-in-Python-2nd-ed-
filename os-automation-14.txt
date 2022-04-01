@@ -1,0 +1,6 @@
+>>> afile.read_text()
+'hello\n'
+>>> afile.write_text("goodbye\n")
+8
+>>> afile.read_text()
+'goodbye\n'

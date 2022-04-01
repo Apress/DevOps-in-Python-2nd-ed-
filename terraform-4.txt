@@ -1,0 +1,11 @@
+def resource_from_content_idx(content, idx):
+    filename = "${path.module}/sandbox/greeting-" + str(idx)
+    resource = dict(resource=dict(
+        local_file={
+            f"greeting_{idx}": dict(
+                filename=filename,
+                content=content,
+            )
+        }
+    ))
+    return resource

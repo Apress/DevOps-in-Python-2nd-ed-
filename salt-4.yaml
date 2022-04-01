@@ -1,0 +1,20 @@
+local:
+    ----------
+    __pub_fun:
+        test.kwarg
+    __pub_jid:
+        20220221233400575283
+    __pub_pid:
+        858
+    __pub_tgt:
+        salt-call
+    number:
+        5
+    simple_dict:
+        ----------
+        other_thing:
+            2
+        thing:
+            1
+    word:
+        hello

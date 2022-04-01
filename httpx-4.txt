@@ -1,0 +1,5 @@
+>>> res = c.get("https://api.github.com/repos/python/cpython/pulls")
+>>> commits_url = res.json()[0]['commits_url']
+>>> commits = c.get(commits_url).json()
+>>> commits[0]['commit']['message'][:40]
+'bpo-46104: Fix example broken by GH-3014'

@@ -1,0 +1,2 @@
+$ export PIPENV_IGNORE_VIRTUALENVS=1
+$ . ~/.venvs/pipenv/bin/activate

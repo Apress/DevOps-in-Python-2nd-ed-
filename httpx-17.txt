@@ -1,0 +1,3 @@
+fut1 = async_client.get("https://httpbin.org/delay/3?param=async-first")
+fut2 = async_client.get("https://httpbin.org/delay/3?param=async-second")
+responses = await asyncio.gather(fut1, fut2)

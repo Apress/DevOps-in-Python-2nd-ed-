@@ -1,0 +1,4 @@
+$ ./sample-environment/bin/python -m pip install glom
+...
+$ ./sample-environment/bin/python -m glom
+{}

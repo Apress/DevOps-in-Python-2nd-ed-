@@ -1,0 +1,3 @@
+>>> public_key_2 = PublicKey(encoded)
+>>> public_key_2 == public_key
+True

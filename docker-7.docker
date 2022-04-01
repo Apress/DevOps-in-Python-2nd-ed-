@@ -1,0 +1,2 @@
+COPY requirements.txt /app/sources/
+RUN /app/runtime/bin/pip install -r /app/sources/requirements.txt

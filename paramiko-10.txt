@@ -1,0 +1,3 @@
+# Connect client
+stdin, stdout, stderr = client.exec_command("echo hello world")
+print(stdout.read().decode("ascii"))

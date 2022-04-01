@@ -1,0 +1,2 @@
+with httpx.Client() as c:
+    c.get(...)

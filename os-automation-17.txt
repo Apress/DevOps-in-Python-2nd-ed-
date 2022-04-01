@@ -1,0 +1,4 @@
+>>> afile.write_bytes(b"\xff\xfe>\xd8 \xdd")
+6
+>>> afile.read_text(encoding="utf-16")
+'🤠'

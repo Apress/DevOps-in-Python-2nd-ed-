@@ -1,0 +1,4 @@
+from paramiko import SSHClient
+import os
+
+client.load_host_keys(os.path.expanduser("~/.ssh/known_hosts"))

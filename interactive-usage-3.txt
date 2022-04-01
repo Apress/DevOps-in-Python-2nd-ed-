@@ -1,0 +1,2 @@
+>>> import readline, os
+>>> readline.write_history_file(os.path.expanduser("~/.python-history"))

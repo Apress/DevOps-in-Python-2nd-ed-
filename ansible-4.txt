@@ -1,0 +1,2 @@
+$ chmod +x ./simple.inv
+$ ./simple.inv

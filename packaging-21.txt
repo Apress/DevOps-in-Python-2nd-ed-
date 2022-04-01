@@ -1,0 +1,3 @@
+$ pip install dist/binary_example*.whl
+$ python -c 'import binary_module;print(binary_module.add(1, 2))'
+3

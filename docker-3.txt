@@ -1,0 +1,11 @@
+$ tail -4 setup.cfg
+install_requires =
+    pyramid
+    gunicorn
+    attrs
+$ docker build .
+...
+Step 11/13 : RUN /opt/pyr-venv/bin/pip check
+ ---> Running in 6a186bd1f533
+pyrapp 0.0.1 requires attrs, which is not installed.
+The command '/bin/sh -c /opt/pyr-venv/bin/pip check' ...

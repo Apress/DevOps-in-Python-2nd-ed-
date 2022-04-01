@@ -1,0 +1,1 @@
+FROM internal-registry.example.com/base-python-image:3.9-2022-03-10

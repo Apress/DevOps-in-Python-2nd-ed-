@@ -1,0 +1,3 @@
+>>> home = pathlib.Path.home()
+>>> home
+PosixPath('/home/pythonista')

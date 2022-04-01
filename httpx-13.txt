@@ -1,0 +1,11 @@
+import httpx, datetime
+
+sync_client = httpx.Client()
+before = datetime.datetime.now()
+r1 = sync_client.get("https://httpbin.org/delay/3?param=sync-first")
+r2 = sync_client.get("https://httpbin.org/delay/3?param=sync-second")
+delta = datetime.datetime.now() - before
+print(delta // datetime.timedelta(seconds=1))
+results1 = r1.json()
+results2 = r2.json()
+print(results1["args"]["param"], results2["args"]["param"])

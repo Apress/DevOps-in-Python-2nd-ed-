@@ -1,0 +1,12 @@
+$ mkdir useful
+$ cd useful
+$ pipenv add termcolor
+$ mkdir useful
+$ touch useful/__init__.py
+$ cat > useful/__main__.py
+import termcolor
+print(termcolor.colored("Hello", "red"))
+$ pipenv shell
+(pipenv)$ python -m useful
+(pipenv)$ exit
+$

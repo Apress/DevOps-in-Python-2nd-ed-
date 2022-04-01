@@ -1,0 +1,4 @@
+$ pip-compile > requirements.txt
+<output snipped>
+$ sed -e 's/ *#.*//' -e '/^$/d' requirements.txt
+gunicorn==20.1.0
